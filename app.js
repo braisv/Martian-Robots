@@ -14,8 +14,8 @@ let input = [];
 rl.on("line", line => {
   if (line === "send") {
     let processInput = new Lecture(input);
+    console.log("ROBOT ARRAY: ", processInput.robots);
     rl.close();
-    return processInput.grid;
 
 
   } else if (notNewLine(line)) {

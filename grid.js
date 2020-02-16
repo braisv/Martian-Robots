@@ -1,7 +1,7 @@
 function gridLecture(input) {
   let coordinates = input[0].split(" ");
-  let length = +coordinates[0];
-  let height = +coordinates[1];
+  let length = +coordinates[0] + 1;
+  let height = +coordinates[1] + 1;
 
   if (length > 50 || height > 50)
     throw new Error("Grid size cannot be greater than 50x50");
@@ -15,7 +15,7 @@ function gridLecture(input) {
   };
 
   for (let i = 0; i < height; i++) {
-    myGrid.map[i] = new Array(length).fill("\u{1F7EA}");
+    myGrid.map[i] = new Array(length).fill("O");
   }
 
   console.log("GRID: ", myGrid);
