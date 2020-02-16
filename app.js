@@ -1,5 +1,5 @@
 const readline = require("readline");
-const readInput = require("./readInput");
+const Lecture = require("./readInput");
 
 let rl = readline.createInterface({
   input: process.stdin,
@@ -7,18 +7,19 @@ let rl = readline.createInterface({
   terminal: false
 });
 
-console.log("PLEASE, SAY SOMETHING");
+console.log("PLEASE, INTRODUCE COMMAND WITH THE RIGHT FORMAT AND WRITE $send");
 
-let inputs = [];
+let input = [];
 
 rl.on("line", line => {
-  if (line === "go") {
-    console.log(readInput(inputs));
-
-
+  if (line === "send") {
+    let processInput = new Lecture(input);
     rl.close();
+    return processInput.grid;
+
+
   } else if (notNewLine(line)) {
-    inputs.push(line);
+    input.push(line);
   }
 });
 

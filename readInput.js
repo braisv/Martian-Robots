@@ -1,11 +1,11 @@
-const grid = require("./grid");
+const gridLecture = require("./grid");
 
-const readInput = (input) => {
-    let commands = input.join(" ").split(' ')
-    grid(+commands[0], +commands[1])
+class Lecture {
+    constructor(input){
+        this.input = input;
+        this.grid = gridLecture(input);
 
-    return commands
+    }
 }
 
-module.exports = readInput;
-
+module.exports = Lecture;
