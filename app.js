@@ -19,9 +19,9 @@ rl.on("line", line => {
     return processInput.output;
 
 
-  } else if (notNewLine(line)) {
+  } else if (notEmptyLine(line)) {
     input.push(line);
   }
 });
 
-const notNewLine = line => line.replace(/(\r|\n)/g, "") !== "";
+const notEmptyLine = line => line.replace(/(\r|\n)/g, "") !== "";
