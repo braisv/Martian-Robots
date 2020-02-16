@@ -1,0 +1,24 @@
+{
+  "name": "mars-robot",
+  "version": "1.0.0",
+  "description": "Move robots around Mars",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/braisv/Martian-Robots.git"
+  },
+  "keywords": [
+    "mars",
+    "robots"
+  ],
+  "author": "braisv",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/braisv/Martian-Robots/issues"
+  },
+  "homepage": "https://github.com/braisv/Martian-Robots#readme"
+}

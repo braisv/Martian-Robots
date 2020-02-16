@@ -17,9 +17,7 @@ function gridLecture(input) {
   for (let i = 0; i < height; i++) {
     myGrid.map[i] = new Array(length).fill("O");
   }
-
-  console.log("GRID: ", myGrid);
-
+  
   return myGrid;
 }
 
