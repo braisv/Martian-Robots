@@ -3,7 +3,7 @@ Here I show you how to solve Martian robots problem. You just need to run the ap
 
 ## The Problem
 
-Introduce the command `/npm start` in your node console, then it will suggest you to introduce some input and send it by writing `/send`.
+Introduce the command `npm start` in your node console, then it will suggest you to introduce some input and send it by writing `send`.
 
 As a result, you will see the position of your robots over the grid, and the final output.
 
