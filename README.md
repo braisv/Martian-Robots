@@ -1,7 +1,7 @@
 # Martian robots
 Here I show you how to solve Martian robots problem. You just need to run the application and try the inputs you want.
 
-## The Problem
+## Instructions
 
 Introduce the command `npm start` in your node console, then it will suggest you to introduce some input and send it by writing `send`.
 
